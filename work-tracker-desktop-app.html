@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work Tracker Desktop App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Work Tracker Desktop App</h1>
+    </header>
+    <section>
+        <h2>Desktop Application | Productivity & Task Management</h2>
+
+        <h3>1. Project Overview</h3>
+        <p>
+            WorkTracker is a comprehensive desktop productivity suite designed to streamline task management 
+            through data-driven insights and gamified progress tracking. The application integrates a robust 
+            SQL-based backend with a modern graphical interface to help users organize, time, and analyze 
+            their professional workflows effectively.
+        </p>
+
+        <p><strong>Platform:</strong> Windows / macOS / Linux (Python Desktop Application)</p>
+        <p><strong>Role:</strong> Lead Developer</p>
+        <p><strong>Tools Used:</strong> Python, SQLite, ttkbootstrap, Matplotlib, Pandas, Pillow</p>
+
+        <h3>2. Core Features</h3>
+        <ul>
+            <li>
+                <strong>Gamified Progression System:</strong> A dynamic rewards engine that awards 
+                10 EXP per completed task. The system calculates user levels (1–30) in real time 
+                and unlocks new profile avatars as milestones are reached.
+            </li>
+
+            <li>
+                <strong>Intelligent Task Management:</strong> A centralized hub for creating and 
+                tracking tasks with metadata such as priority level, category, and estimated 
+                duration. Includes automatic overdue task detection based on system dates.
+            </li>
+
+            <li>
+                <strong>Advanced Analytics Dashboard:</strong> Data visualization using 
+                Matplotlib and Pandas to generate monthly productivity trends and task 
+                distribution charts.
+            </li>
+
+            <li>
+                <strong>Precision Productivity Timer:</strong> A built-in stopwatch that tracks 
+                active work sessions to measure how long projects take to complete.
+            </li>
+
+            <li>
+                <strong>Secure Session Management:</strong> Custom authentication system with 
+                persistent login sessions and secure database interactions to protect user data.
+            </li>
+        </ul>
+
+        <h3>3. Design & Logic</h3>
+
+        <h4>User Experience</h4>
+        <p>
+            The interface follows the <strong>"Flatly"</strong> design system from ttkbootstrap 
+            to maintain a clean and professional layout. The application prioritizes a 
+            <em>zero-friction workflow</em> where dashboards and task tables automatically 
+            refresh whenever the database is updated. A fade-in splash screen initializes the 
+            SQLite database and validates user sessions before loading the main workspace.
+        </p>
+
+        <h4>Database Architecture</h4>
+        <p>
+            The application uses a relational database structure composed of three main tables:
+            <strong>users, tasks, and rewards</strong>. This architecture maintains data integrity 
+            while enabling efficient analytics queries such as monthly productivity reports.
+        </p>
+
+        <h3>4. Team Contributors</h3>
+        <ul>
+            <li>Libaton</li>
+            <li>Inocencio</li>
+            <li>Eupalan</li>
+        </ul>
+
+        <h3>5. Project Images</h3>
+        <div class="image-gallery">
+            <h4>1. Login and Sign Up Page</h4>
+            <img src="images/WORK TRACKER IMAGES/Login  and sign up page.png" alt="Login and Sign Up Page" style="width:100%; margin-bottom: 20px; border-radius: 8px;">
+
+            <h4>2. Overview Menu</h4>
+            <img src="images/WORK TRACKER IMAGES/Overview Menu.png" alt="Overview Menu" style="width:100%; margin-bottom: 20px; border-radius: 8px;">
+
+            <h4>3. Tasks Page</h4>
+            <img src="images/WORK TRACKER IMAGES/tasks.png" alt="Tasks Page" style="width:100%; margin-bottom: 20px; border-radius: 8px;">
+
+            <h4>4. Analytics Menu</h4>
+            <img src="images/WORK TRACKER IMAGES/analytics menu.png" alt="Analytics Menu" style="width:100%; margin-bottom: 20px; border-radius: 8px;">
+
+            <h4>5. Rewards Page</h4>
+            <img src="images/WORK TRACKER IMAGES/Rewards.png" alt="Rewards Page" style="width:100%; margin-bottom: 20px; border-radius: 8px;">
+
+            <h4>6. Settings Page</h4>
+            <img src="images/WORK TRACKER IMAGES/Settings.png" alt="Settings Page" style="width:100%; margin-bottom: 20px; border-radius: 8px;">
+        </div>
+    </section>
+    <footer>
+        <p><a href="index.html">Back to Portfolio</a></p>
+    </footer>
+</body>
+</html>
