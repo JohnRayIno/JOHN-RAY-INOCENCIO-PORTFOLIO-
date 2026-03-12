@@ -10,8 +10,49 @@
     <header>
         <h1>Line Follower Robot</h1>
     </header>
+    <!-- <section>
+        <h1>Line Follower Robot</h1>
+    </section> -->
     <section>
-        <p>Designed and built an autonomous robot        capable of detecting and following a line using infrared sensors. Implemented control logic for navigation and performed calibration and debugging to improve tracking accuracy.</p>
+        <h2>Line Follower Robot | Discrete Combinational Logic</h2>
+
+        <h3>1. Project Overview</h3>
+        <p>
+            The Line Follower Robot is an autonomous vehicle designed to navigate a path using <strong>hardwired combinational logic</strong>. By eliminating the need for a microcontroller, the system achieves near-instantaneous processing of sensor data. The robot utilizes a three-sensor array and discrete logic gate ICs (NAND/NOT) to drive an H-Bridge motor driver for real-time path correction.
+        </p>
+        <ul>
+            <li><strong>Platform:</strong> Discrete Logic Control (No Microcontroller)</li>
+            <li><strong>Role:</strong> Logic Designer & Hardware Systems Developer</li>
+            <li><strong>Key Components:</strong> Logic Gate ICs (74-series), IR Sensors, H-Bridge Motor Driver, DC Motors.</li>
+        </ul>
+
+        <h3>2. Core Features</h3>
+        <ul>
+            <li><strong>Hardwired Decision Making:</strong> Pathfinding is executed through physical logic gates, implementing a custom Boolean algorithm derived from K-map simplification.</li>
+            <li><strong>NAND-Based Architecture:</strong> Uses universal NAND gates to implement the control functions $X = A' + B$ and $Y = B + C'$, optimizing the physical IC footprint on the PCB.</li>
+            <li><strong>Real-Time H-Bridge Control:</strong> Directly interfaces logic signals with an H-Bridge motor driver to regulate power to the Left and Right motors.</li>
+            <li><strong>Zero-Latency Navigation:</strong> Processing speed is limited only by the propagation delay of the logic gates (nanoseconds), ensuring immediate response to track curves.</li>
+        </ul>
+
+        <h3>3. Design & Logic</h3>
+
+        <h4>Boolean Optimization</h4>
+        <p>
+            The robot's navigation "intelligence" is hard-coded into the circuit. Using three IR sensors ($A, B, C$), we established the following logic to control the Left ($X$) and Right ($Y$) motors:
+        </p>
+
+        <h3>4. Project Media</h3>
+        <div class="media-gallery">
+            <h4>Video Demonstration</h4>
+            <video controls style="width: 80%; max-height: 400px; margin: 0 auto; display: block;">
+                <source src="Images/LINE FOLLOWER/0312.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <h4>Images</h4>
+            <img src="Images/LINE FOLLOWER/LOGIC.jpg" alt="Line Follower Robot Logic" style="width:100%; margin-bottom: 20px; border-radius: 8px;">
+            <img src="Images/LINE FOLLOWER/PRODUCT PIC.png" alt="Line Follower Robot Product Picture" style="width:100%; margin-bottom: 20px; border-radius: 8px;">
+        </div>
     </section>
     <footer>
         <p><a href="index.html">Back to Portfolio</a></p>
